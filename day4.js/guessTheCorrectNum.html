@@ -1,0 +1,23 @@
+<!--Write a program to print "try again " until the user enters the correct number.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number</title>
+</head>
+<body>
+  <script>
+    const correctNum = 14;
+    let i = null;
+
+    while (Number(i) !== correctNum) {
+      alert("Try again");
+      i = prompt("Enter a number:");
+    }
+
+    alert("You entered the correct number.");
+  </script>
+</body>
+</html>
+
