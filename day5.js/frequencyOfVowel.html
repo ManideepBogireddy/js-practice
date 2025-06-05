@@ -1,0 +1,30 @@
+<!--Find frequency of each vowel -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel Frequency</title>
+</head>
+<body>
+    <script>
+        let str = prompt("Enter a string:");
+        str = str.toLowerCase();
+        let vowels ={a:0, e:0, i:0, o:0, u:0};
+
+        for(let i=0;i<str.length;i++){
+            let ch= str[i];
+            if(vowels.hasOwnProperty(ch)){
+                    vowels[ch]++;
+            }
+        }
+
+        let result="";
+          for (let v in vowels) {
+      result += v + ": " + vowels[v] + "\n";
+    }
+
+    alert("Vowel frequencies:\n" + result);
+    </script>
+</body>
+</html>

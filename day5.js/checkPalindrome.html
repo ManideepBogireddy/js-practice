@@ -1,0 +1,29 @@
+<!--Check Palindrome-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Check</title>
+</head>
+<body>
+    <script>
+        let num =  Number(prompt("Enter a number:"));
+        alert("Number is: " + num);
+
+        let reversed = num.toString().split('').reverse().join('');
+        alert("The reverse number is: "+reversed);
+        
+        if(num.toString() === reversed){
+            alert("The entered number is a palindrome number.");
+        }
+        else{
+            alert("The entered number is not a palindrome number.");
+
+        }
+
+    </script>
+    
+    
+</body>
+</html>
